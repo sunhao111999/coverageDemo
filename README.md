@@ -19,8 +19,8 @@ coverageDemo
     }
  ```
  
- 
-  - ./gradlew createDebugCoverageReport or ./gradlew connectedCheck
+
+- ./gradlew createDebugCoverageReport or ./gradlew connectedCheck
  
  
  
