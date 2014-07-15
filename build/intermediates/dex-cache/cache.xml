@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pre-dex-items>
+
+    <item
+        dex="/home/sunhao/Project/android/coverageDemo/app/build/intermediates/pre-dexed/debug/espresso-1.1-bundled-d14fca4e9d52ce89bf4aa6c622df942aae612bfa.jar"
+        jar="/home/sunhao/Project/android/coverageDemo/app/libs/espresso-1.1-bundled.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="10fd9af4db388b2c22638b9b586b568c5a65f356"/>
+    <item
+        dex="/home/sunhao/Project/android/coverageDemo/app/build/intermediates/pre-dexed/debug/jacocoagent-0909c9d2db1610e8b89dc171200e7e99e7bfd1d9.jar"
+        jar="/home/sunhao/Project/android/coverageDemo/app/build/intermediates/jacoco/jacocoagent.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="fff8d469eae45133910c0e53841e3ab88742e309"/>
+
+</pre-dex-items>
