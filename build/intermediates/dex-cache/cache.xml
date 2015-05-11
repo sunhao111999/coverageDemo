@@ -1,17 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
-<pre-dex-items>
+<items version="2" >
 
     <item
-        dex="/home/sunhao/Project/android/coverageDemo/app/build/intermediates/pre-dexed/debug/espresso-1.1-bundled-d14fca4e9d52ce89bf4aa6c622df942aae612bfa.jar"
-        jar="/home/sunhao/Project/android/coverageDemo/app/libs/espresso-1.1-bundled.jar"
+        jar="/home/sunhao/project/android/Coverage/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.0.0/classes.jar"
         jumboMode="false"
-        revision="19.1.0"
-        sha1="10fd9af4db388b2c22638b9b586b568c5a65f356"/>
+        revision="22.0.1"
+        sha1="4e86306289ace4aa0cfec44a05ed2b410d36989d">
+        <dex dex="/home/sunhao/project/android/Coverage/app/build/intermediates/pre-dexed/debug/classes-fcd2821953dd06c1ecd7e159c4f32049a5719a2d.jar" />
+    </item>
     <item
-        dex="/home/sunhao/Project/android/coverageDemo/app/build/intermediates/pre-dexed/debug/jacocoagent-0909c9d2db1610e8b89dc171200e7e99e7bfd1d9.jar"
-        jar="/home/sunhao/Project/android/coverageDemo/app/build/intermediates/jacoco/jacocoagent.jar"
+        jar="/home/sunhao/project/android/Coverage/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/classes.jar"
         jumboMode="false"
-        revision="19.1.0"
-        sha1="fff8d469eae45133910c0e53841e3ab88742e309"/>
+        revision="22.0.1"
+        sha1="d84409890828e07d344a3b9b1da545dba9897b51">
+        <dex dex="/home/sunhao/project/android/Coverage/app/build/intermediates/pre-dexed/debug/classes-ede8a7575593cb6fe0e50c8f41b7f9d7d8311898.jar" />
+    </item>
+    <item
+        jar="/home/sunhao/project/android/Coverage/app/build/intermediates/jacoco/jacocoagent.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="ea73283d55c98ab1fccb8c23d76c68b7d7ecbd83">
+        <dex dex="/home/sunhao/project/android/Coverage/app/build/intermediates/pre-dexed/debug/jacocoagent-bf4353449f0f92b600ef0eb8f21075f75d6d3383.jar" />
+    </item>
+    <item
+        jar="/home/sunhao/local/android-sdk-linux/extras/android/m2repository/com/android/support/support-annotations/22.0.0/support-annotations-22.0.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="685d0b2c590447e85284ed84712cb363ba04eff8">
+        <dex dex="/home/sunhao/project/android/Coverage/app/build/intermediates/pre-dexed/debug/support-annotations-22.0.0-bcf4edc6d90aee00fdb6df0248780c05753642f2.jar" />
+    </item>
+    <item
+        jar="/home/sunhao/project/android/Coverage/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.0.0/libs/internal_impl-22.0.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="b5b92f469d515a13d778900f6d50c03d12f35504">
+        <dex dex="/home/sunhao/project/android/Coverage/app/build/intermediates/pre-dexed/debug/internal_impl-22.0.0-fa4e87ddcca1d0f5206ec44369a6420eb3b57ee5.jar" />
+    </item>
 
-</pre-dex-items>
+</items>

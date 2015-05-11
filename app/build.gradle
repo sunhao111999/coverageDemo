@@ -1,36 +1,58 @@
 apply plugin: 'com.android.application'
+apply plugin: 'jacoco'
 
 android {
-    compileSdkVersion 19
-    buildToolsVersion "19.1.0"
+    compileSdkVersion 22
+    buildToolsVersion "22.0.1"
+
+    jacoco {
+        version = '0.7.4.201502262128'
+    }
 
     defaultConfig {
-        applicationId "example.calculator"
-        minSdkVersion 8
-        targetSdkVersion 19
+        applicationId "com.example.sunhao"
+        minSdkVersion 15
+        targetSdkVersion 22
         versionCode 1
         versionName "1.0"
 
-        testInstrumentationRunner 'com.google.android.apps.common.testing.testrunner.GoogleInstrumentationTestRunner'
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
-
-    jacoco {
-        version = '0.7.0.201403182114'
-    }
-
     buildTypes {
         release {
-            runProguard false
+            minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
 
         debug {
-            testCoverageEnabled = true
+            debuggable true
+            testCoverageEnabled true
         }
     }
 }
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
-    androidTestCompile files('libs/espresso-1.1-bundled.jar')
+    compile 'com.android.support:appcompat-v7:22.0.0'
+}
+
+def coverageSourceDirs = [ '../app/src' ]
+
+task jacocoTestReport(type: JacocoReport) {
+    group = "Reporting"
+    description = "Generate Jacoco coverage reports"
+    classDirectories = fileTree(
+            dir: '../app/build/intermediates/classes',
+            excludes: ['**/R.class',
+                       '**/R$*.class',
+                       '**/*$ViewInjector*.*',
+                       '**/BuildConfig.*',
+                       '**/Manifest*.*'])
+    additionalSourceDirs = files(coverageSourceDirs)
+    sourceDirectories = files(coverageSourceDirs)
+    executionData = files('../coverage.ec')
+
+    reports {
+        xml.enabled = true
+        html.enabled = true }
 }
